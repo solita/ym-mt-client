@@ -1,0 +1,58 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLightGray, mtGray from colors;
+
+.margin2emPaddingLeft10px {
+  margin: 2em;
+  padding-left: 10px;
+}
+
+.searchContainer {
+  background-color: mtLightGray;
+  border: 1px solid mtGray;
+  padding: 1em 2em;
+}
+
+.verticalMargin1em {
+  margin: 1em 0;
+}
+
+.centerInlineChildren {
+  text-align: center;
+}
+
+.defaultLabelSpan {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.labelSpanAfterCheckbox {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+.subRadioSelection {
+  padding: 1em;
+}
+
+.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 3em auto;
+}
+
+.resultTable tr {
+  border-bottom: 0.0625rem solid mtGray;
+}
+
+.resultTable tr:nth-child(even) {
+  background-color: mtLightGray;
+}
+
+.resultTable th {
+  text-align: left;
+}
+
+.resultTable td,
+.resultTable th {
+  padding: 0.75em;
+}

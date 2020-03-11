@@ -1,0 +1,17 @@
+.centerText {
+  text-align: center;
+}
+
+.iconContainer {
+  height: 5em;
+  text-align: center;
+}
+
+.iconContainer > svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.columnContainer {
+  margin-bottom: 2em;
+}

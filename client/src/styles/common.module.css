@@ -1,0 +1,60 @@
+@value colors: './colors.module.css';
+@value mtGray, mtLightRed, mtOrange, mtLightGreen, mtDeepGreen from colors;
+
+.thickBorderTop {
+  border-top: 3px solid mtGray;
+  padding-top: 1rem;
+}
+
+.thickBorderBottom {
+  border-bottom: 3px solid mtGray;
+  padding-bottom: 1rem;
+}
+
+.mediumVerticalMargin {
+  margin: 1em auto;
+}
+
+.mediumRightMargin {
+  margin-right: 1em;
+}
+
+.listTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.listTable tr {
+  border-bottom: 1px solid lightgray;
+}
+.listTable th {
+  text-align: left;
+}
+
+.listTableCellPadding td,
+.listTableCellPadding th {
+  padding: 0.75em;
+}
+
+.alignEnd {
+  display: flex;
+  align-items: flex-end;
+}
+
+.errorContainer {
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 0.0625rem solid mtOrange;
+  background-color: mtLightRed;
+}
+
+.successContainer {
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 0.0625rem solid mtDeepGreen;
+  background-color: mtLightGreen;
+}
+
+.largeHorizontalPadding {
+  padding-left: 2em;
+  padding-right: 2em;
+}

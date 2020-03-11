@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -0.25em;
+  width: calc(100% + 0.5em);
+}
+
+.container {
+  flex-basis: 20%;
+  padding: 0.25em;
+}
+
+.dimmer {
+  align-items: center;
+  background-color: #00000080;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.dimmerButton {
+  margin: 2em 1em;
+}
+
+.image {
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.image__large {
+  max-height: 90vh;
+  max-width: 90vw;
+}

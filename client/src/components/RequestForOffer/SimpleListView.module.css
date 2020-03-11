@@ -1,0 +1,17 @@
+.item {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0 1rem 0.5rem 0;
+}
+.item > * {
+  margin: 0.5rem 0;
+}
+
+.title {
+  padding: 2em 1.3em;
+}
+
+.buttonWrap {
+  text-align: center;
+  margin: 1rem 0;
+}

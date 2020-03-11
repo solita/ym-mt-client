@@ -1,0 +1,212 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLightGray, mtDeepGreen from colors;
+
+.container {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+  .container {
+    margin: 0.9em 0;
+  }
+}
+
+.userInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (min-width: 48em) {
+  .userInfoContainer {
+    margin-right: 1em;
+  }
+}
+
+.userInfoContainer__icon {
+  margin: 0 0.5em;
+  transition: transform 200ms ease-in-out;
+}
+
+@media (min-width: 48em) {
+  .container:hover .userInfoContainer__icon__animated {
+    transform: rotate(-180deg);
+  }
+}
+
+@media (max-width: 48em) {
+  .userControls[aria-expanded] .userInfoContainer__icon__animated {
+    transform: rotate(-180deg);
+  }
+}
+
+.userInfoContainer__username {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.userControls {
+  background: transparent;
+  display: flex;
+  flex-flow: column;
+  text-transform: none;
+  position: relative;
+  max-width: 100%;
+}
+.userControls:hover,
+.userControls:focus {
+  background: transparent;
+}
+
+@media (min-width: 48em) {
+  .userControls {
+    flex-direction: row;
+  }
+}
+
+.actionButton {
+  font-size: 1em;
+  background-color: transparent;
+  margin: 1rem;
+  padding: 0;
+  color: #fff;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.actionButton:focus,
+.actionButton:hover {
+  background: transparent;
+}
+
+.actionButton__icon {
+  margin-right: 0.5em;
+}
+
+.userMenuContainer {
+  background-color: mtLightGray;
+  border-bottom: 0.2em solid #e7e7e7;
+  border-top: 0.2em solid #e7e7e7;
+  height: 0;
+  margin-top: 0.5em;
+  min-width: 100vw;
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 50ms ease-in-out, height 200ms ease-in-out;
+}
+
+@media (min-width: 48em) {
+  .userMenuContainer {
+    background-color: #fff;
+    border: 0.2em solid mtDeepGreen;
+    display: none;
+    height: auto;
+    margin: auto;
+    min-width: 18em;
+    position: absolute;
+    top: 3em;
+    transform: scaleY(1);
+    z-index: 1;
+  }
+
+  .userMenuWrapper {
+    left: -8rem;
+    position: relative;
+    top: -3rem;
+  }
+}
+
+.container:focus .userMenuContainer,
+.container:hover .userMenuContainer {
+  display: block;
+}
+
+.userMenuWrapper:target .userMenuContainer,
+.userMenuWrapper[aria-expanded] .userMenuContainer {
+  height: auto;
+  transform: scaleY(1);
+  visibility: visible;
+}
+
+.userMenuWrapper[aria-expanded] .userMenuContainer {
+  display: block;
+}
+
+.userMenuContainer .actionButton {
+  color: #000;
+}
+
+.navList {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navList__item {
+  cursor: pointer;
+  padding: 0 1.25em;
+}
+
+.navList__item::before,
+.navList__item::after {
+  background: #dfdfdf;
+  content: '';
+  display: block;
+  height: 0.06em;
+  width: 100%;
+}
+
+@media (max-width: 48em) {
+  .navList__item:first-of-type::before,
+  .navList__item:last-of-type::after {
+    display: none;
+  }
+}
+
+.navList__item:hover,
+.navList__item--active {
+  background-color: #e7e7e7;
+}
+
+.navList__item button {
+  font-family: inherit;
+}
+
+.navList__item__icon {
+  display: flex;
+  flex-basis: 2em;
+  flex-shrink: 0;
+}
+
+.navList__item__title {
+  flex-grow: 1;
+}
+
+.navList__item__link {
+  align-items: center;
+  color: #000;
+  display: flex;
+  margin: 1em 0;
+  padding: 0 0.25em;
+  text-align: left;
+  text-decoration: none;
+  transition: ease-in-out 0.1s;
+  width: 100%;
+}

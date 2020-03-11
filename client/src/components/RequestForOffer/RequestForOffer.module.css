@@ -1,0 +1,218 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepBlue, mtDeepGreen, mtOrange from colors;
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  background-color: white;
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.mainHeading {
+  font-weight: 900;
+  text-align: center;
+}
+
+.subHeading {
+  text-align: center;
+}
+
+.smallerGreenSidemark {
+  font-size: 0.6em;
+  color: mtDeepGreen;
+  margin-left: 1em;
+}
+
+.typeWrapper__secondLevel {
+  margin-left: 1em;
+}
+
+.typeWrapper__secondLevelOption {
+  display: inline-block;
+}
+
+.submitButton {
+  margin: 1em 1em 1em 0;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+}
+
+.detailWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.detailContainerThird {
+  width: 33.3%;
+}
+
+.detailContainerHalf {
+  width: 50%;
+}
+
+.detailContainerFull {
+  width: 100%;
+}
+.tag {
+  display: inline-table;
+}
+.rfoItem {
+  display: flex;
+  -ms-box-orient: horizontal;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: stretch;
+  margin: 0 0;
+  border-top: 2px solid #dfdfdf;
+  padding: 2rem 0;
+}
+
+.rfoTitle {
+  flex: 2 1 auto;
+  font-weight: 700;
+}
+.rfoTitle a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: mtDeepBlue;
+}
+.rfoTitle h2 {
+  text-decoration: none;
+  margin: 0;
+}
+.rfoDescription {
+  flex: 1 100%;
+}
+.rfoDescription p {
+  margin-bottom: 0;
+}
+.rfoInfo {
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+}
+.rfoAmountDetails {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+.rfoAmountDetails span,
+.rfoCloses span {
+  margin: 0 0.2em;
+}
+.rfoAmountDetails span:first-child,
+.rfoCloses span:first-child {
+  margin: 0;
+}
+
+.rfoCloses svg {
+  height: 25px;
+  margin-right: 1rem;
+  position: relative;
+  top: 6px;
+  width: 25px;
+}
+@media (max-width: 48em) {
+  .rfoCloses svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.rfoCompanyDetails {
+  flex: 1 100%;
+  margin-top: 1rem;
+}
+.rfoCloses {
+  flex: 1 100%;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.rfoType {
+  text-transform: uppercase;
+  color: #adadad;
+}
+
+.map {
+  min-height: 25em;
+}
+
+.rfoDetailsWrap {
+  flex: 2;
+}
+.rfoDetailRow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+
+.tagList {
+  margin-block-start: 0.5em;
+}
+
+@media (max-width: 48em) {
+  .rfoDetailRow {
+    display: block;
+  }
+  .tagList {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
+.addRfoButtonWrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+@media (min-width: 90em) {
+  .addRfoButtonWrap {
+    margin-top: 0;
+  }
+}
+
+.buttonWrap :global(.buttonStyle),
+.buttonWrap button {
+  margin: 1rem 1rem 1rem 0;
+  display: inline-block;
+}
+
+.closeRfoButton {
+  background-color: transparent;
+  color: mtDeepBlue;
+  text-transform: none;
+  padding-left: 0;
+}
+
+.closeRfoButton:hover,
+.closeRfoButton:focus {
+  background-color: transparent;
+}
+
+.redX {
+  background-color: #f9a0a0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 2rem;
+  margin: 0 1rem 0 0;
+  position: relative;
+  top: 0.7rem;
+  width: 2rem;
+}
+
+.closeRfoButton:focus .redX,
+.closeRfoButton:hover .redX {
+  background-color: mtOrange;
+}
+
+@media (max-width: 48em) {
+  .rfoFormButtonsWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,42 @@
+.heading {
+  border-bottom: 0.25rem solid #f0f0f0;
+  padding: 1rem 0;
+}
+.details__label {
+  font-weight: 700;
+  flex: 1;
+}
+.details__label,
+.users span {
+  flex: 1;
+}
+.details__value {
+  flex: 3;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.detailRow {
+  display: flex;
+  margin: 0.4rem 0;
+}
+.users {
+  display: flex;
+  flex-direction: row;
+}
+.users:hover {
+  background-color: #f0f0f0;
+}
+.form__input {
+  flex: 1;
+}
+.form label {
+  font-weight: 700;
+}
+.isTsvReadyCheckbox {
+  display: inline;
+  margin-left: 0.8rem;
+}

@@ -1,0 +1,67 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepBlue, mtBlue from colors;
+
+.searchDropdown {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  border-radius: 0.25em;
+  border: 2px solid mtBlue;
+  max-width: 50rem;
+  width: 100%;
+}
+.selectItem {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 2em;
+  cursor: pointer;
+}
+.selectText:hover:not(.selectOpener) {
+  background-color: lightgray;
+}
+
+.selectText,
+.selectRemove,
+.deleteConfirmQuestion,
+.deleteConfirmCancel,
+.deleteConfirmDo {
+  align-self: center;
+  padding: 0.5rem 1rem;
+}
+
+.selectText {
+  flex: 3;
+  display: block;
+  text-align: left;
+}
+.deleteConfirmCancel,
+.deleteConfirmDo,
+.selectRemove {
+  display: inline-block;
+  text-align: right;
+  color: mtDeepBlue;
+}
+.deleteConfirmCancel:hover,
+.deleteConfirmDo:hover,
+.selectRemove:hover {
+  text-decoration: underline;
+}
+.savedSearchWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deleteConfirmQuestion {
+  font-weight: 700;
+  width: 100%;
+}
+.deleteConfirmCancel {
+  padding: 0.5rem 1rem;
+}

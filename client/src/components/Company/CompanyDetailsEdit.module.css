@@ -1,0 +1,30 @@
+.form__label,
+.datePickerLabel {
+  flex: 1;
+  font-weight: 700;
+}
+.form__input,
+.datePickerInput,
+.datePickerWrap :global(.react-datepicker-wrapper) {
+  flex: 2;
+}
+.label {
+  font-weight: 700;
+}
+.datePickerWrap {
+  display: flex;
+}
+.buttonWrap {
+  margin: 1rem 0;
+}
+.marginRight1rem {
+  margin-right: 1rem;
+}
+.form {
+  margin: 2rem 0;
+}
+.editRow {
+  display: flex;
+  align-items: center;
+  margin: 0.4rem 0;
+}

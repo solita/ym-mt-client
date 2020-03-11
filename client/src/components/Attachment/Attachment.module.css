@@ -1,0 +1,39 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLighterBlue, mtOrange from colors;
+
+.attachmentInput__input {
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: -1;
+}
+
+.attachmentInput__label {
+  background: mtOrange;
+  border-radius: 9px;
+  border: 2px solid mtOrange;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-align: center;
+  width: initial;
+}
+
+.attachmentInput__input:focus + .attachmentInput__label {
+  outline: 2px dotted lightskyblue;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.attachmentListing__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.125em 0;
+  padding: 0.25em;
+}
+
+.attachmentListing__item:nth-child(even) {
+  background-color: mtLighterBlue;
+}

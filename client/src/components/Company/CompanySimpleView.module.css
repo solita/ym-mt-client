@@ -1,0 +1,25 @@
+.companySimpleView label {
+  font-weight: 700;
+  padding-right: 0.5rem;
+}
+.companySimpleView label::after {
+  content: ':';
+}
+.companySimpleView {
+  padding: 0 1rem;
+}
+.label {
+  font-weight: 700;
+  flex: 1;
+}
+.infoValue {
+  flex: 1;
+}
+.infoContainer {
+  margin: 0.5rem 0;
+  display: flex;
+}
+.buttonWrap {
+  text-align: center;
+  margin: 1rem 0;
+}

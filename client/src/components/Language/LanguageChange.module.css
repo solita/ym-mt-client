@@ -1,0 +1,16 @@
+.languageButton {
+  outline: 0;
+  padding: 0 0.25rem;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.languageChangeContainer {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

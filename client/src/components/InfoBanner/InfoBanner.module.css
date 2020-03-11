@@ -1,0 +1,36 @@
+@value colors: '../../styles/colors.module.css';
+@value mtBlue from colors;
+
+.bannerContainer {
+  background: #f8f5ed;
+  padding: 2.5em 0 1.5em 0;
+}
+
+.bannerContainerSmall {
+  background: #f8f5ed;
+  padding: 1em;
+}
+
+.bannerIconContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.banner__infoIcon {
+  width: 1.625rem;
+  height: 1.625rem;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: center;
+  color: #fff;
+  background-color: mtBlue;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.banner__heading {
+  margin-top: 0;
+}

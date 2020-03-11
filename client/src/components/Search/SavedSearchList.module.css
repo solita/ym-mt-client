@@ -1,0 +1,9 @@
+.savedSearchLink {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.savedSearchLink__label {
+  font-weight: bold;
+}

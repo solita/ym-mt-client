@@ -1,0 +1,189 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepBlue, mtDarkGray, mtGreen, mtOrange from colors;
+
+.container {
+  background-color: white;
+}
+
+.mainHeading {
+  font-weight: 900;
+  text-align: center;
+}
+
+.verticalMargin2em {
+  margin: 2em 0;
+}
+
+.horizontalMargin2em {
+  margin: 0 2em;
+}
+
+.marginRight2em {
+  margin-right: 2em;
+}
+
+.marginBottomHalfem {
+  margin-bottom: 0.5em;
+}
+
+.marginBottom1em {
+  margin-bottom: 1em;
+}
+
+.marginBottom2em {
+  margin-bottom: 2em;
+}
+
+.marginTopHalfem {
+  margin-top: 0.5em;
+}
+
+.greenBackground {
+  background-color: mtGreen;
+}
+
+.detailWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.detailContainerHalf {
+  width: 50%;
+}
+
+.sortButton:after {
+  color: mtDeepBlue;
+  content: '|';
+  margin-left: 1rem;
+}
+.sortButton:last-child:after {
+  content: '';
+}
+
+@media (max-width: 48em) {
+  .sortButton {
+    display: block;
+    padding-left: 0;
+  }
+  .sortButton:after {
+    content: '';
+  }
+}
+
+.sortButton,
+.sortButton:hover,
+.sortButton:focus {
+  background-color: transparent;
+  color: mtDeepBlue;
+  text-transform: none;
+}
+
+.sortButton.active,
+.sortButton.active:hover,
+.sortButton.active:focus {
+  color: #000;
+}
+
+.headingWithUnderline {
+  border-bottom: 2px solid lightgray;
+  margin: 4.5rem 0 3rem;
+  padding-bottom: 0.8rem;
+}
+
+.buttonWrapper {
+  padding: 6rem 0 2rem;
+}
+
+.buttonWrapper__cancelButton {
+  margin-right: 2rem;
+}
+.buttonWrapper__submitButton {
+  background-color: mtGreen;
+  margin-right: 2rem;
+}
+
+.priceOfService {
+  display: inline-block;
+  margin-right: 2rem;
+  max-width: 200px;
+}
+
+.twoColumnLayout {
+  display: inline-block;
+  width: 50%;
+  padding: 0 1rem 0 0;
+}
+.twoColumnLayout label span {
+  display: block;
+}
+
+.tsvRequestListHeading {
+  margin-bottom: 0.5rem;
+}
+
+.tsvRequestListSecondaryInformation {
+  margin-top: 0.5rem;
+  color: mtDarkGray;
+}
+
+.tsvRequestListButtonWrapper {
+  text-align: center;
+}
+
+.contractArchiveList {
+  margin: 0;
+  padding: 0;
+}
+
+.contractArchiveListItemColumn {
+  width: 25%;
+}
+.contractArchiveListItemColumn p {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.contractArchiveListHeaders {
+  border-bottom: #e7e7e7 3px solid;
+  display: flex;
+  padding: 0 0 0.5rem 0;
+}
+
+.contractArchiveListItem {
+  border-bottom: #e7e7e7 3px solid;
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.ContractListHeader {
+  border-bottom: #e7e7e7 4px solid;
+  padding-bottom: 1rem;
+}
+
+.contractName {
+  color: mtDeepBlue;
+  font-weight: bold;
+}
+
+.tag {
+  border-radius: 1rem;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 0.2rem 0.4rem;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.tagGreen {
+  background-color: mtGreen;
+}
+
+.tagRed {
+  background-color: red;
+}
+
+.tagYellow {
+  background-color: mtOrange;
+}

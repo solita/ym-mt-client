@@ -1,0 +1,35 @@
+.permitTable {
+  padding-left: 1rem;
+  width: 100%;
+}
+.permitTable th {
+  text-align: left;
+}
+@media (max-width: 48rem) {
+  .permitTable {
+    padding-left: 0;
+  }
+  .permitTable td,
+  .permitTable th {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .permitTable thead,
+  .permitTable tbody {
+    display: inline-block;
+    width: 50%;
+  }
+  .permitTable tbody > tr > td:first-child,
+  .permitTable thead > tr > th:first-child {
+    height: 50px;
+  }
+
+  .permitTable tr {
+    display: table-cell;
+  }
+}
+
+.header {
+  display: block;
+  margin-bottom: 1rem;
+}

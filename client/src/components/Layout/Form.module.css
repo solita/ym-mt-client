@@ -1,0 +1,94 @@
+.widthOneThird {
+  width: calc(100% / 3 - 0.5em);
+}
+
+.widthTwoThirds {
+  width: calc(100% / 3 * 2 - 0.5em);
+}
+
+.widthHalf {
+  width: calc(100% / 2 - 0.5em);
+}
+
+.widthQuarter {
+  width: calc(100% / 4 - 0.5em);
+}
+
+.widthThreeQuarters {
+  width: calc(100% / 4 * 3 - 0.5em);
+}
+
+.widthFull {
+  width: 100%;
+}
+
+@media (max-width: 48em) {
+  .widthOneThird,
+  .widthTwoThirds,
+  .widthHalf,
+  .widthQuarter,
+  .widthThreeQuarters {
+    width: 100%;
+  }
+}
+
+.formRow {
+  padding-bottom: 0.5em;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.formRowHorizontal {
+  padding-bottom: 0.5em;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.formInputContainer {
+  display: inline-block;
+  padding: 0 0.25em 0 0;
+}
+
+.formInputContainer ::placeholder {
+  font-size: 0.875em;
+}
+
+.paddingRightSm {
+  padding-right: 1em;
+}
+
+.paddingLeftSm {
+  padding-left: 1em;
+}
+
+.alignItems {
+  display: flex;
+  align-items: center;
+}
+
+.defaultLabelSpan {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.labelSpanAfterCheckbox {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+.formWarning {
+  padding: 0.5em;
+  border: 0.125em solid gray;
+}
+.useTsvCheckboxLabel {
+  display: inline-block;
+}
+input.useTsvCheckboxInput {
+  margin: 0;
+}

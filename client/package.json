@@ -1,0 +1,61 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "0.19.0",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "i18next": "^13.1.0",
+    "immer": "^3.1.1",
+    "normalize.css": "^8.0.1",
+    "oidc-client": "^1.6.1",
+    "oskari-rpc": "^2.1.0",
+    "qs": "^6.6.0",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.0",
+    "react-datepicker": "^2.8.0",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^6.0.0-beta",
+    "react-i18next": "^9.0.2",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.1.1",
+    "react-test-renderer": "^16.7.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:https": "PORT=443 HTTPS=true react-scripts start",
+    "starthttpswin": "set HTTPS=true&&set PORT=446&&react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "testcoverage": "react-scripts test --coverage",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 100
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie < 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "https://test.server.fi"
+}

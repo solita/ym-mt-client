@@ -1,0 +1,14 @@
+export const HANDLE_OFFER_FORM_CHANGE = 'offer/HANDLE_OFFER_FORM_CHANGE';
+export const CLEAR_OFFER_FORM = 'offer/CLEAR_OFFER_FORM';
+export const SWITCH_OFFER_CREATE_MODE = 'offer/SWITCH_OFFER_CREATE_MODE';
+export const ADD_SUBSERVICE = 'offer/ADD_SUBSERVICE';
+export const DELETE_SUBSERVICE = 'offer/DELETE_SUBSERVICE';
+export const DELETE_ALL_SUBSERVICES = 'offer/DELETE_ALL_SUBSERVICES';
+export const ADD_FILES = 'offer/ADD_FILES';
+export const DELETE_FILE = 'offer/DELETE_FILE';
+export const OFFER_VIEW = 'offer/OFFER_VIEW';
+export const CLEAR_OFFER_VIEW = 'offer/CLEAR_OFFER_VIEW';
+export const LOADING_OFFER = 'offer/LOADING_OFFER';
+export const OFFER_NOT_FOUND = 'offer/OFFER_NOT_FOUND';
+export const HANDLE_VIEW_FORM_CHANGE = 'offer/HANDLE_VIEW_FORM_CHANGE';
+export const OFFER_FORM_HAS_CHANGES = 'rfo/OFFER_FORM_HAS_CHANGES';

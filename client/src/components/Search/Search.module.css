@@ -1,0 +1,49 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLightGray, mtGray from colors;
+
+.searchBar {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.searchBar .searchBar__input {
+  height: 3em;
+  border-radius: 1.5em;
+  padding: 1em;
+}
+
+.searchBar .searchBar__input__header {
+  border: none;
+}
+
+.searchContainer {
+  display: flex;
+  background-color: mtLightGray;
+  border: 1px solid mtGray;
+  flex-flow: column wrap;
+  align-items: stretch;
+  align-content: center;
+  padding: 1em 2em 1em 2em;
+  margin-bottom: 3em;
+}
+
+.searchForm {
+  width: 100%;
+}
+
+.subHeading {
+  margin-top: 0;
+}
+
+.searchContainer__controls {
+  display: flex;
+  justify-content: space-around; /* space-around for IE that does not recognize space-evenly */
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.selectLabel {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}

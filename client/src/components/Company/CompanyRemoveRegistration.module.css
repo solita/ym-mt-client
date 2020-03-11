@@ -1,0 +1,59 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepBlue from colors;
+
+.form__label,
+.datePickerLabel {
+  flex: 1;
+  font-weight: 700;
+}
+.form__input,
+.datePickerInput,
+.datePickerWrap :global(.react-datepicker-wrapper) {
+  flex: 2;
+}
+.label {
+  font-weight: 700;
+}
+.datePickerWrap {
+  display: flex;
+}
+.removeWrap {
+  margin-top: 2rem;
+}
+.form {
+  margin: 2rem 0;
+}
+.editRow {
+  display: flex;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+.buttonWrap {
+  margin: 1rem 0;
+}
+.marginRight1rem {
+  margin-right: 1rem;
+}
+.removeButton {
+  background-color: #fff;
+  border: 0;
+  color: mtDeepBlue;
+  font-weight: 700;
+  padding-left: 0;
+}
+.removeButton:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.removeButton:focus {
+  background-color: #fff;
+}
+.removeButton:before {
+  content: '\2573';
+  background-color: #f9a0a0;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.59rem 0.8rem;
+  margin-top: -0.8rem;
+  margin-right: 1rem;
+}

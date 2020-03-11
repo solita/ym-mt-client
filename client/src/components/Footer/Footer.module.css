@@ -1,0 +1,47 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLightGray from colors;
+
+.menuContainer {
+  background-color: mtLightGray;
+  border-bottom: 0.066em solid #e7e7e7;
+  border-top: 0.066em solid #e7e7e7;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  margin-top: 4em;
+  padding: 4em 1.25em;
+}
+
+.logoContainer {
+  background-color: #fff;
+}
+
+.centerContent {
+  justify-content: center;
+}
+
+.logoImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoImageContainer__image {
+  padding: 4em 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.heading {
+  font-size: 1.1em;
+  font-weight: 900;
+  margin-bottom: 1.5em;
+}
+
+.heading__subHeading {
+  font-size: 1em;
+  margin: 1.5em 0 0.5em;
+}
+
+.paragraph {
+  display: block;
+  line-height: 1.75;
+  margin: 0.25em 0;
+}

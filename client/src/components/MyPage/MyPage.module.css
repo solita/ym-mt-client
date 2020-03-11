@@ -1,0 +1,97 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepGreen from colors;
+
+.container {
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.widthAuto {
+  width: auto;
+}
+
+.horizontalMargin1em {
+  margin: 0 1em;
+}
+
+.verticalMarginHalfem {
+  margin: 0.5em 0;
+}
+
+.marginLeftHalfem {
+  margin-left: 0.5em;
+}
+
+.paddingBottom2rem {
+  padding-bottom: 2rem;
+}
+
+.greenSidemark {
+  color: mtDeepGreen;
+  margin-left: 2em;
+  text-transform: none;
+}
+
+.borderTop {
+  border-top: 3px solid lightgray;
+  padding-top: 1rem;
+}
+
+.buttonWrap {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* listTable styles: */
+.listTable {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-collapse: collapse;
+}
+.listTable tr {
+  border-bottom: 1px solid lightgray;
+}
+.listTable th {
+  text-align: left;
+}
+.smallVerticalCellPaddings tr td {
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+.mediumVerticalCellPaddings tr td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.listingTitleContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.listingTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.myPageList {
+  padding: 0;
+}
+
+.myPageListItem {
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin-bottom: 0.75rem;
+  padding: 0 1rem 0.5rem 0;
+}
+.myPageListItem > * {
+  margin: 0.5rem 0;
+}

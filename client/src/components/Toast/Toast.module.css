@@ -1,0 +1,39 @@
+@value colors: '../../styles/colors.module.css';
+@value mtGreen, mtRed, mtGray from colors;
+
+.toastContainer {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  width: 30vw;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  padding: 1em;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 0.5rem 0 mtGray;
+  border: 0.125rem solid #fff;
+  border-radius: 0.25rem;
+}
+
+.notificationIcon {
+  margin-right: 0.5em;
+}
+
+.notification_SUCCESS {
+  background-color: mtGreen;
+}
+
+.notification_WARNING {
+  background-color: mtRed;
+}
+
+@media (max-width: 48em) {
+  .toastContainer {
+    width: 80vw;
+  }
+}

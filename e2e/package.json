@@ -1,0 +1,30 @@
+{
+  "name": "ym-tori-cypress-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.0.0 <11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress",
+    "cypress-local-macos": "CYPRESS_baseUrl=https://test.server cypress",
+    "cypress-local": "set CYPRESS_baseUrl=https://test.server&&cypress",
+    "run-cypress-local-web": "set CYPRESS_baseUrl=https://test.server&&cypress run --spec 'cypress/integration/webapp/**/*'",
+    "cypress-local-auth": "set CYPRESS_baseUrl=https://test.serverauth.test.server&&cypress",
+    "cypress-local-admin": "set CYPRESS_baseUrl=https://test.serveradmin.test.server&&cypress",
+    "run-cypress-ci": "set CYPRESS_baseUrl=https://ci.server&&cypress run --spec 'cypress/integration/webapp/**/*'",
+    "run-cypress-ci-auth": "set CYPRESS_baseUrl=https://ci.serverauth.test.server&&cypress run --spec 'cypress/integration/auth/**/*'",
+    "run-cypress-ci-admin": "set CYPRESS_baseUrl=https://ci.serveradmin.test.server&&cypress run --spec 'cypress/integration/admin/**/*'"
+  },
+  "author": "Solita",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "cypress": "3.8.0",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "cypress-plugin-retries": "^1.4.0"
+  }
+}

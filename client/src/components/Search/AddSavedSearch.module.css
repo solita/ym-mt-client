@@ -1,0 +1,50 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepGreen from colors;
+
+.marginRight1rem {
+  margin-right: 1rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.55);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form {
+  position: fixed;
+  margin: 5% auto;
+  z-index: 1000;
+  top: 2vw;
+  left: 2rem;
+  right: 2rem;
+}
+.formRow {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  max-width: 65rem;
+  width: 95%;
+  border-left: 0.125rem solid mtDeepGreen;
+  border-right: 0.125rem solid mtDeepGreen;
+}
+.formRow:last-child {
+  border-bottom: 0.125rem solid mtDeepGreen;
+}
+.formContainer {
+  align-items: center;
+}
+.formRowHeader {
+  height: 3rem;
+  background-color: mtDeepGreen;
+  color: #fff;
+
+  font-size: 1.4rem;
+}

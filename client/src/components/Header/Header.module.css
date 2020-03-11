@@ -1,0 +1,53 @@
+@value colors: '../../styles/colors.module.css';
+@value mtDeepGreen from colors;
+
+.container {
+  background-color: mtDeepGreen;
+  color: #fff;
+}
+
+.headingLink {
+  display: inline-block;
+  margin: auto 0;
+  height: 3.65rem;
+  text-decoration: none;
+  transition: ease-in-out 0.15s;
+}
+
+.headingLink > svg {
+  max-width: 100%;
+}
+
+@media (max-width: 48em) {
+  .headingLink {
+    margin: 1.5em 0 0.5em;
+    text-align: center;
+  }
+}
+
+.mainHeading {
+  color: #fff;
+  font-size: 2.875em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.secondaryHeading {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 48em) {
+  .secondaryHeading {
+    text-align: center;
+  }
+}
+
+.justifyCenter {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+}

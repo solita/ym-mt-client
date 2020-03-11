@@ -1,0 +1,175 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLightGray from colors;
+
+.navList {
+  align-items: stretch;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 -10px;
+  min-height: 100%;
+  padding: 0;
+}
+
+.navList__item {
+  display: inline-block;
+}
+
+.navList__item:first-of-type {
+  margin-top: 3em;
+}
+
+.navList__item__link {
+  color: #000;
+  display: inline-block;
+  font-size: 1.75em;
+  font-weight: 900;
+  padding: 1rem;
+  text-decoration: none;
+  transition: ease-in-out 0.1s;
+  width: 100%;
+}
+
+.navList__item__link:hover,
+.navList__item__link--active {
+  color: #000;
+  background-color: #ededed;
+}
+
+.backdrop {
+  background: #000;
+  cursor: default;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 200ms ease, visibility 200ms ease;
+  visibility: hidden;
+  width: 100%;
+  z-index: 998;
+}
+
+.menuToggle {
+  align-items: center;
+  background: initial;
+  border-radius: initial;
+  color: #000;
+  display: flex;
+  text-align: left;
+}
+
+.menuToggle:hover,
+.menuToggle:focus {
+  background: initial;
+}
+
+.menuToggle:focus {
+  outline: initial;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.menuToggle__open {
+  font-size: 1em;
+  line-height: 1em;
+  padding: 0.75em 15px;
+}
+
+.menuToggle__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menuToggle__title {
+  padding: 0 0.5em;
+}
+
+.mainMenu {
+  background-color: mtLightGray;
+  height: 100%;
+  left: -20rem;
+  position: absolute;
+  top: 0;
+  transition: left 200ms ease, width 200ms ease;
+  width: 15rem;
+  z-index: 999;
+}
+
+.mainMenu:target,
+.mainMenu[aria-expanded] {
+  display: block;
+  left: 0;
+  visibility: visible;
+}
+
+.mainMenu:target .menuToggle__close,
+.mainMenu[aria-expanded] .menuToggle__close {
+  z-index: 1001;
+}
+
+.mainMenu:target .navList,
+.mainMenu[aria-expanded] .navList {
+  position: relative;
+  z-index: 1000;
+}
+
+.mainMenu:target + .backdrop,
+.mainMenu[aria-expanded] + .backdrop {
+  opacity: 0.66;
+  visibility: visible;
+}
+
+@supports (position: fixed) {
+  .mainMenu,
+  .mainMenu:target + .backdrop,
+  .mainMenu[aria-expanded] + .backdrop {
+    position: fixed;
+  }
+}
+
+@media (min-width: 24rem) {
+  .mainMenu {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .container {
+    border-bottom: 0.125em solid #f0f0f0;
+    opacity: 0.95;
+  }
+
+  .navList {
+    align-items: initial;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  .navList__item:first-of-type {
+    margin-top: 0;
+  }
+
+  .menuToggle__open,
+  .menuToggle__close {
+    display: none;
+  }
+
+  .mainMenu {
+    display: block;
+    height: auto;
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    z-index: initial;
+  }
+
+  .mainMenu:target + .backdrop,
+  .mainMenu[aria-expanded] + .backdrop {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

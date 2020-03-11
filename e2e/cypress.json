@@ -1,0 +1,9 @@
+{
+  "viewportWidth": 1368,
+  "viewportHeight": 2160, 
+  "trashAssetsBeforeRuns": true,
+  "video": false,
+  "pageLoadTimeout": 60000,
+  "responseTimeout": 60000,
+  "chromeWebSecurity": false
+}

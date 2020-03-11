@@ -1,0 +1,46 @@
+@value colors: '../../styles/colors.module.css';
+@value mtLightGray, mtGray from colors;
+
+.searchContainer {
+  background-color: mtLightGray;
+  border: 1px solid mtGray;
+  padding: 1em 2em;
+}
+
+.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem auto 3rem auto;
+}
+
+.resultTable tr {
+  border-bottom: 0.0625rem solid mtGray;
+}
+
+.resultTable tr:nth-child(even) {
+  background-color: mtLightGray;
+}
+
+.resultTable th {
+  text-align: left;
+}
+
+.resultTable td,
+.resultTable th {
+  padding: 0.75em;
+}
+.backButtonMargin {
+  margin-bottom: 2rem;
+}
+.customerCountWrap {
+  margin: 2rem 0 0 1rem;
+}
+.customerCountInput {
+  max-width: 10rem;
+  margin-left: 1rem;
+  display: inline;
+}
+.customerCountLabel {
+  font-weight: 700;
+  display: inline;
+}
